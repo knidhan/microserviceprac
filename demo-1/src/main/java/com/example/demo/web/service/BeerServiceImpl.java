@@ -15,4 +15,16 @@ public class BeerServiceImpl implements BeerService {
 		return BeerDto.builder().id(UUID.randomUUID()).beerName("bhaloo").beerStyle("hairs").build();
 	}
 
+	@Override
+	public BeerDto saveBeer(BeerDto beerDto) {
+		// TODO Auto-generated method stub
+		return beerDto.builder().id(UUID.randomUUID()).build();
+	}
+
+	@Override
+	public void updateBeer(UUID beerId, BeerDto beerDto) {
+		// TODO Auto-generated method stub
+		//return null;
+	}
+
 }
